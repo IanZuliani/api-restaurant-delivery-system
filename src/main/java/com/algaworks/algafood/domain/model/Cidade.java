@@ -10,8 +10,8 @@ import javax.persistence.*;
 @Entity
 public class Cidade {
 
-    @Id
     @EqualsAndHashCode.Include
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 

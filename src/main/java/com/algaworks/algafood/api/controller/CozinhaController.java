@@ -84,7 +84,7 @@ public class CozinhaController {
         try {
             Cozinha cozinha = cozinhaRepository.buscar(cozinhaId);
             if(cozinha != null) {
-                cozinhaRepository.remover(cozinha);
+                cozinhaRepository.remover(cozinha.getId());
                 return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
             }
             return ResponseEntity.notFound().build();
